@@ -1,0 +1,36 @@
+---
+import Button from "./Button.astro";
+import Container from "./Container.astro";
+---
+
+<Container size="big">
+  <nav>
+    <h1>FurDem</h1>
+    <div>
+      <a href="#contact">Contact us</a>
+      <Button size="small" variant="secondary" text="Donate" />
+    </div>
+  </nav>
+</Container>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+  }
+  h1 {
+    font-size: 30px;
+    color: var(--primary-color);
+  }
+  div {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+  a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>

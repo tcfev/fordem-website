@@ -1,0 +1,45 @@
+---
+interface Props {
+  size: "small" | "big";
+  variant: "primary" | "secondary";
+  text: string | number;
+}
+
+const { size, variant, text } = Astro.props;
+
+const button_class_name = size + " " + variant;
+---
+
+<button class={button_class_name}>
+  {text}
+</button>
+
+<style>
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+  .small {
+    padding: 10px 22px;
+    font-size: 16px;
+  }
+  .big {
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+  .primary {
+    background-color: var(--primary-color);
+  }
+  .secondary {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+</style>

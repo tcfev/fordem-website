@@ -1,0 +1,23 @@
+---
+interface Props {
+  size: "small" | "big";
+}
+
+const { size } = Astro.props;
+---
+
+<section class={size}>
+  <slot />
+</section>
+
+<style>
+  section {
+    margin: auto;
+  }
+  .big {
+    width: 80%;
+  }
+  .small {
+    width: 60%;
+  }
+</style>
