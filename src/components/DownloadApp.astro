@@ -1,0 +1,41 @@
+---
+import Container from "./Container.astro";
+---
+
+<section>
+  <Container size="small">
+    <div class="wrapper">
+      <div>
+        <h2>Download our Application</h2>
+        <img src="/images/download.png" width="150" height="auto" class="mt" />
+      </div>
+      <div>
+        <img src="/images/app.jpg" width="500" height="auto" />
+      </div>
+    </div>
+  </Container>
+</section>
+
+<style>
+  section {
+    display: inline-flex;
+    margin-top: 70px;
+    height: 600px;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  h2 {
+    color: white;
+    font-size: 60px;
+  }
+  .mt {
+    margin-top: 35px;
+  }
+</style>
