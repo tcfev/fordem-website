@@ -1,0 +1,32 @@
+---
+const pictures: { default: string }[] = await Astro.glob(
+  "../../public/images/roll/*.jpg"
+);
+---
+
+<section>
+  {
+    pictures.map((picture) => (
+      <img
+        src={picture.default.replace("/public", "")}
+        width="200"
+        height="200"
+      />
+    ))
+  }
+</section>
+
+<style>
+  section {
+    display: inline-flex;
+    margin-top: 70px;
+    height: 200px;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  img {
+    min-width: 200px;
+    margin-right: 10px;
+  }
+</style>
