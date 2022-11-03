@@ -3,7 +3,7 @@ import Container from "./Container.astro";
 ---
 
 <Container size="small">
-  <section>
+  <section id="aboutus">
     <h2>What we're doing?</h2>
     <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -19,10 +19,12 @@ import Container from "./Container.astro";
 
 <style>
   section {
+    width: 700px;
     display: flex;
     margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
-    justify-content: center;
   }
   h2 {
     font-size: 3vw;

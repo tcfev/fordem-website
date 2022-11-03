@@ -3,16 +3,19 @@ interface Props {
   size: "small" | "big";
   variant: "primary" | "secondary";
   text: string | number;
+  link?: string;
 }
 
-const { size, variant, text } = Astro.props;
+const { size, variant, text, link } = Astro.props;
 
 const button_class_name = size + " " + variant;
 ---
 
-<button class={button_class_name}>
-  {text}
-</button>
+<a href={link || "#"}>
+  <button class={button_class_name}>
+    {text}
+  </button>
+</a>
 
 <style>
   button {

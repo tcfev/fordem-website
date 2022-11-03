@@ -1,0 +1,94 @@
+---
+import Container from "./Container.astro";
+
+const MOCK_DATA = [
+  { title: "Close the Iran embassies" },
+  { title: "Human chain" },
+  { title: "Ban Tiktok! in russia" },
+  { title: "Ukrain war protest in Munich" },
+];
+---
+
+<Container size="small">
+  <aside>
+    <h2>
+      Active
+      <br />
+      events & polls
+    </h2>
+    <p></p>
+  </aside>
+</Container>
+<section>
+  {
+    MOCK_DATA.map((i) => (
+      <div class="card">
+        <h3 class="card-title">{i.title}</h3>
+        <div>
+          <span>100 votes</span>
+          <div class="bar" />
+        </div>
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  aside {
+    width: 700px;
+    display: flex;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+  h2 {
+    width: 100%;
+    font-size: 3vw;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.7rem;
+    max-width: 480px;
+  }
+  section {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+  .card {
+    flex: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 12px;
+    margin: 10px;
+    height: 150px;
+    border-radius: 8px;
+    border: 0.5px solid #212121;
+    box-shadow: 7px 10px 16px -4px rgba(33, 33, 33, 0.19);
+    -webkit-box-shadow: 7px 10px 16px -4px rgba(33, 33, 33, 0.19);
+    -moz-box-shadow: 7px 10px 16px -4px rgba(33, 33, 33, 0.19);
+    cursor: pointer;
+  }
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .bar {
+    width: 100%;
+    height: 7px;
+    background: #168aad;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+</style>
