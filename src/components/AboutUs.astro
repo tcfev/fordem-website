@@ -27,7 +27,6 @@ import Container from "./Container.astro";
     text-align: left;
   }
   h2 {
-    font-size: 3vw;
     width: 200px;
     font-size: 40px;
     font-weight: bold;
@@ -38,5 +37,19 @@ import Container from "./Container.astro";
     font-weight: bold;
     line-height: 1.7rem;
     max-width: 480px;
+  }
+
+  @media (max-width: 600px) {
+    section {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    h2 {
+      font-size: 7vw;
+    }
+    p {
+      margin-top: 30px;
+    }
   }
 </style>

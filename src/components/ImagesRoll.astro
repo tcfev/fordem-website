@@ -29,4 +29,12 @@ const pictures: { default: string }[] = await Astro.glob(
     min-width: 200px;
     margin-right: 10px;
   }
+
+  @media (max-width: 600px) {
+    img {
+      min-width: 150px;
+      height: 150px;
+      margin-right: 5px;
+    }
+  }
 </style>

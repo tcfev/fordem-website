@@ -44,7 +44,6 @@ const MOCK_DATA = [
   }
   h2 {
     width: 100%;
-    font-size: 3vw;
     font-size: 40px;
     font-weight: bold;
   }
@@ -90,5 +89,23 @@ const MOCK_DATA = [
     background: #168aad;
     border-radius: 10px;
     margin-top: 10px;
+  }
+
+  @media (max-width: 600px) {
+    aside {
+      margin-top: 30px;
+    }
+    h2 {
+      font-size: 7vw;
+    }
+    section {
+      width: 100%;
+      margin: 0;
+    }
+    .card {
+      margin: auto;
+      margin-top: 10px;
+      max-width: 35%;
+    }
   }
 </style>
