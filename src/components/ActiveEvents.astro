@@ -2,19 +2,19 @@
 import Container from "./Container.astro";
 
 const MOCK_DATA = [
-  { title: "Close the Iran embassies" },
-  { title: "Human chain" },
-  { title: "Ban Tiktok! in russia" },
-  { title: "Ukrain war protest in Munich" },
+  { title: "How democratic is Heilbronn", link: "https://docs.google.com/document/d/1TLOEqupvUqbZKbLUvG8gzpsz5paJF7KVAoyDPw-Tq2o/edit" },
+  // { title: "Human chain" },
+  // { title: "Ban Tiktok! in russia" },
+  // { title: "Ukrain war protest in Munich" },
 ];
 ---
 
 <Container size="small">
   <aside>
     <h2>
-      Active
+      Active projects &
       <br />
-      events & polls
+      news
     </h2>
     <p></p>
   </aside>
@@ -25,7 +25,7 @@ const MOCK_DATA = [
       <div class="card">
         <h3 class="card-title">{i.title}</h3>
         <div>
-          <span>100 votes</span>
+          <span><a href={i.link}>read more…</a></span>
           <div class="bar" />
         </div>
       </div>
