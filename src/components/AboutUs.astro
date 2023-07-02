@@ -2,22 +2,22 @@
 import Container from "./Container.astro";
 ---
 
-<Container size="small">
+<Container size="big">
   <section id="aboutus">
     <h2>Who, what, why…?</h2>
     <p>
       <u>Who is behind the project?</u><br>
       We are the developers of this censorship-resistant sociopolitical network. Our volunteer team is transnational, heterarchical and committed to human rights and fundamental freedoms. 
 
-      We met in a hackathon of Update Deutschland and joined forces and expanded globally because we were working on similar ideas. Organizationally, Fordem is a project of Transnational Community Federation e. V. (TCF). TCF is a non-profit, not-governmental heterarchical civic innovation Lab. With our interdisciplinary approach, we bring about positive changes in our communities around the world. We are active in various fields including promotion of education, democratic systems, and demarginalization. For more information check www.transcf.org
+      We met in a hackathon of Update Deutschland and joined forces and expanded globally because we were working on similar ideas. Organizationally, Fordem is a project of Transnational Community Federation e. V. (TCF). TCF is a non-profit, not-governmental heterarchical civic innovation Lab. With our interdisciplinary approach, we bring about positive changes in our communities around the world. We are active in various fields including promotion of education, democratic systems, and demarginalization. For more information check  <a href="https://TransCF.org"><u>TransCF</u></a>
       <br> 
       <br>
       <u>How can you support?</u><br>
-      There are many ways in which you can support Fordem: You can donate money and help us to cover the costs of the development of the first version of Fordem. You can donate expertise and come and join us, and help with marketing, design, fundraising, project management experience and/or spreading good energy and love. You can donate your time and opinion and test Fordem as soon as the first version is out and give us your honest and constructive feedback.<br>
-      <br>
-      Let us promote democractic systems together. Find us on<br>
-        <a href="https://TransCF.org"><u>TransCF</u></a> & 
-        <a href="https://github.com/tcfev/Fordem/discussions"><u>GitHub</u></a>
+      There are many ways in which you can support Fordem.<br>
+      You can donate money and help us to cover the costs of the development of the first version of Fordem.<br> 
+      You can donate expertise and come and join us, and help with marketing, design, fundraising, project management experience and/or spreading good energy and love.<br>
+      You can donate your time and opinion and test Fordem as soon as the first version is out and give us your honest and constructive feedback.<br>
+      Let us promote democractic systems together. Find us on<br><a href="https://github.com/tcfev/Fordem/discussions"><u>GitHub</u></a>
       <br>
       <br>
       <u>What is Fordem?</u><br>
@@ -25,7 +25,9 @@ import Container from "./Container.astro";
       <br>
       <br>
     <u>Fordem short-term goal:</u><br>
-      Fordem is a tool which can help the development of any community since it can be adapted to the respective needs and contexts. In our first version we are invested in providing the Iranian political activists the tools they will need at each of the networking, deliberation and participation stages of their mobilisation along the ongoing Women, Life, Freedom revolution in Iran. Furthermore, we are invested in implementing Fordem in communities with a democratic gap in Germany. Our focus is on Heilbronn, a city with more than 54% of the population having (family) experiences with migration but none of the members of the local. In the long term Fordem has the potential to be the tool for any community worldwide and connect an endless number of communities with each other. In this sense it can strengthen local communities while connecting them with the world.
+      Fordem is a tool which can help the development of any community since it can be adapted to the respective needs and contexts. In our first version we are invested in providing the Iranian political activists the tools they will need at each of the networking, deliberation and participation stages of their mobilisation, organisation and self-reflection along the ongoing Women, Life, Freedom revolution in Iran.
+      <br>
+      Furthermore, we are invested in implementing Fordem in communities with a democratic gap in Germany. Our focus is on Heilbronn, a city with more than 54% of the population having (family) experiences with migration but form only 5% of the members of the municipal council. In the long term Fordem has the potential to be the tool for any community worldwide and connect an endless number of communities with each other. In this sense it can strengthen local communities while connecting them with the world.
       <br>
       <br>
     <u>The activists will have the possibility to:</u><br>
@@ -40,9 +42,9 @@ import Container from "./Container.astro";
       Fordem is an open-source platform. At its backend lies Nextodon, an extended version of Mastodon that we have written in C# with gRPC, crypto wallet, advanced votes, D2EE DMs and so on. As a mobile app, Fordem has large-scale mesh network formation abilities using WiFi, WFD and BT for the times of no internet, next to usual Mastodon. A DHT on the Nextodon takes care of synchronisation between databases of the networks that emerge from offline modes.
       <br>
       <br>
-      For more insights also check our issue tracker and documentation on Github:<br>
-      https://github.com/tcfev/Fordem<br>
-      https://github.com/tcfev/Nextodon<br>
+      For more insights also check our issue tracker and documentation on Github:
+      <a href="https://github.com/tcfev/Fordem"><u>Fordem</u></a> & <a href="https://github.com/tcfev/Nextodon"><u>Nextodon</u></a>
+      <br>
       <br>
       <u>Development timeline:</u><br>
       June 30, 2023<br>
@@ -111,7 +113,7 @@ tr:nth-child(even) {
 }
 
   section {
-    width: 700px;
+    width: 800px;
     display: flex;
     margin-top: 200px;
     margin-right: auto;
@@ -130,8 +132,9 @@ tr:nth-child(even) {
     line-height: 1.7rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     section {
+      text-align: justify ;
       width: 100%;
       flex-direction: column;
       margin-top: 10px;
