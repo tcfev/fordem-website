@@ -9,7 +9,7 @@ const MOCK_DATA = [
 
 <Container size="big">
   <aside>
-    <h2>Active projects & News</h2>
+    <h2>Blog</h2>
     <p></p>
   </aside>
 </Container>
@@ -17,9 +17,8 @@ const MOCK_DATA = [
   {
     MOCK_DATA.map((i) => (
       <div class="card">
-        <h3 class="card-title">{i.title}</h3>
+        <h3 class="card-title"><span><a href={i.link}><u>{i.title}</u></a></span></h3>
         <div>
-          <span><a href={i.link}>read more…</a></span>
           <div class="bar" />
         </div>
       </div>
